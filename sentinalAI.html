@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Threat Classifier Agent</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🛡️ Threat Classifier Agent</h1>
+    <p>Analyze network packets using LLMs and detect threats automatically.</p>
+
+    <input type="file" id="fileInput" accept=".csv"/>
+    <button onclick="simulateAnalysis()">Run Threat Analysis</button>
+
+    <div id="resultSection">
+      <h2>📋 Results:</h2>
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th>Packet Info</th>
+            <th>Classification</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
